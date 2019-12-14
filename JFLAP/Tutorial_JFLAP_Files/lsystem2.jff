@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 6.1.--><structure>
+	<type>lsystem</type>
+	<!--The L-system axiom.-->
+	<axiom>X</axiom>
+	<!--The rewriting rules.-->
+	<production>
+		<left>X</left>
+		<right>g [ ~ + Y g ] g X</right>
+	</production>
+	<production>
+		<left>Y</left>
+		<right>+ Y</right>
+	</production>
+	<!--The drawing parameters.-->
+	<parameter>
+		<name>angle</name>
+		<value>30</value>
+	</parameter>
+	<parameter>
+		<name>color</name>
+		<value>black</value>
+	</parameter>
+	<parameter>
+		<name>distance</name>
+		<value>18</value>
+	</parameter>
+	<parameter>
+		<name>lineIncrement</name>
+		<value>1</value>
+	</parameter>
+	<parameter>
+		<name>lineWidth</name>
+		<value>4</value>
+	</parameter>
+</structure>

@@ -1,0 +1,20 @@
+program Pa{ //imprime os elementos de uma prograssão aritmética 
+
+void PrintPa(int primeiroTermo,int n,int r){
+int i;
+int termo;
+i = 0;
+while(i<n){
+termo = primeiroTermo + (i-1)*r;
+write termo;
+i = i+1;
+}
+}
+
+void Main(){
+read primeiroTermo;
+read n;
+read r;
+PrintPA(primeiroTermo,n,r);
+}
+

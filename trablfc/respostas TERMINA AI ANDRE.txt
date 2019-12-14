@@ -1,0 +1,31 @@
+1 - As variáveis lBound, uBound e iValue são primeiramente inicializadas.
+Então, a função toString é utilizada para transformar variáveis do tipo Int em String.
+Inicialização de variável lógica.
+Função toString para transformar variáveis do tipo boolean em String
+Declaração de variável do tipo hashTable que armazena o dicionário das variáveis booleanas
+Declaração de variável do tipo hashTable que armazena o dicionário das variáveis inteiras
+Declaração de um vetor para armazenar os comandos
+Declaração de variável do tipo hashTable que armazena o dicionário dos rótulos
+Função report() para imprimir os resultados
+
+
+2 - TinyCode possui o esqueleto do código. Onde o mesmo começa com o identificador "program", a variavel progName terá o valor do ultimo token
+lido.
+ProgramBody estabelece regras para a construção do programa
+DeclareVar estabelece que uma variável é declarada por ":", o varName recebe o valor do último token lido
+DeclareVarBody define regras para declaração de variáveis do tipo integer e boolean.
+int lbound, ubound, cvalue receberão os ultimos valores dos tokens lidos,
+assim como bvalue.
+Statement define regras para construção de comparadores, operações e goto
+StatementBody define como será construido o corpo do código.
+Goto define um jump para tal identificador, registrando em lprogram esse salto, juntamente com o valor do ultimo token lido e incrementa a linha que está mais a linha que estará após o goto.
+Declaração dos operadores '+','-','and' e 'or'
+Declaração da ramificação 'if'
+Declaração da comparação de expressão
+Declaração da comparação de operadores
+
+3) statementNo é a variável que conterá o valor do contador do programa
+String cmd terá o comando atual que foi lido.
+varName terá o nome da variável sendo processada.
+progName terá o nome do programa sendo processado.
+

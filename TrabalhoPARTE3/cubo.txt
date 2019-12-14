@@ -1,0 +1,8 @@
+begin
+input(a);
+input(b);
+input(c);
+y := a*b*c;
+print(y);
+showSymbolTable();
+end

@@ -1,0 +1,22 @@
+COMPILER CLC
+CHARACTERS
+
+letter = "abcdefghijklmnopqrstuvwxyz".
+digit = "0123456789".
+
+TOKENS
+id = letter {letter}.
+num = digit {digit}.
+
+COMMENTS FROM "//" TO '\n'
+IGNORE '\r' + '\n' + '\t'
+
+PRODUCTIONS
+	CLC = "begin" L "end".
+	L = C ";" L | "showSymbolTable" "(" ")" ";" | "showSymbolTree" "(" ")"
+	";".
+	C = id ":=" E ";"| "input" "(" id ")" ";" | "print" "(" id ")" ";".
+	E = T { ("+"|"-") T }.
+	T = F { ("*"|"/") F }.
+	F = (id |num | "(" E ")" ).
+END CLC.

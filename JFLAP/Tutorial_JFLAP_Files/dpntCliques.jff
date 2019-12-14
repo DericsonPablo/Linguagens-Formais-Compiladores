@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 6.1.--><structure>
+	<type>fa</type>
+	<automaton>
+		<!--The list of states.-->
+		<state id="0" name="q0">
+			<x>51.0</x>
+			<y>86.0</y>
+		</state>
+		<state id="1" name="q1">
+			<x>131.0</x>
+			<y>52.0</y>
+		</state>
+		<state id="2" name="q2">
+			<x>132.0</x>
+			<y>125.0</y>
+		</state>
+		<state id="3" name="q3">
+			<x>76.0</x>
+			<y>181.0</y>
+		</state>
+		<state id="4" name="q4">
+			<x>333.0</x>
+			<y>79.0</y>
+		</state>
+		<state id="5" name="q5">
+			<x>239.0</x>
+			<y>110.0</y>
+		</state>
+		<state id="6" name="q6">
+			<x>227.0</x>
+			<y>197.0</y>
+		</state>
+		<state id="7" name="q7">
+			<x>344.0</x>
+			<y>134.0</y>
+		</state>
+		<state id="8" name="q8">
+			<x>467.0</x>
+			<y>42.0</y>
+		</state>
+		<state id="9" name="q9">
+			<x>508.0</x>
+			<y>71.0</y>
+		</state>
+		<state id="10" name="q10">
+			<x>470.0</x>
+			<y>206.0</y>
+		</state>
+		<state id="11" name="q11">
+			<x>426.0</x>
+			<y>123.0</y>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>11</from>
+			<to>8</to>
+			<read/>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>3</to>
+			<read/>
+		</transition>
+		<transition>
+			<from>10</from>
+			<to>8</to>
+			<read/>
+		</transition>
+		<transition>
+			<from>6</from>
+			<to>4</to>
+			<read/>
+		</transition>
+		<transition>
+			<from>10</from>
+			<to>11</to>
+			<read/>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>5</to>
+			<read/>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>5</to>
+			<read/>
+		</transition>
+		<transition>
+			<from>7</from>
+			<to>11</to>
+			<read/>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>6</to>
+			<read/>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>2</to>
+			<read/>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>1</to>
+			<read/>
+		</transition>
+		<transition>
+			<from>7</from>
+			<to>4</to>
+			<read/>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>2</to>
+			<read/>
+		</transition>
+		<transition>
+			<from>9</from>
+			<to>8</to>
+			<read/>
+		</transition>
+		<transition>
+			<from>9</from>
+			<to>11</to>
+			<read/>
+		</transition>
+		<transition>
+			<from>7</from>
+			<to>6</to>
+			<read/>
+		</transition>
+		<transition>
+			<from>9</from>
+			<to>10</to>
+			<read/>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>7</to>
+			<read/>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>0</to>
+			<read/>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>3</to>
+			<read/>
+		</transition>
+	</automaton>
+</structure>

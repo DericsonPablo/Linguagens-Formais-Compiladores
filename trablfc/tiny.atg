@@ -1,0 +1,325 @@
+import java.util.*;
+
+
+
+COMPILER TinyCode 
+
+ 
+
+class IntVar {                       // variavel inteira
+
+   public int lBound, uBound, iValue;
+
+
+
+   public IntVar(int lb, int ub, int v) {
+
+      lBound = lb;
+
+      uBound = ub;
+
+      iValue = v;
+
+   }
+
+
+
+   public String toString() {
+
+     String s = "range:(" + Integer.toString(lBound) + "," + Integer.toString(uBound)+")";
+
+     s = s + " ---> current value :" + Integer.toString(iValue);
+
+     return s;
+
+   }
+
+}
+
+
+
+class BoolVar {           // variavel logica
+
+   public boolean bValue;
+
+
+
+   public BoolVar(boolean v) {
+
+      bValue = v;
+
+   }
+
+
+
+   public String toString() {
+
+     String s = " ---> current value :" + Boolean.toString(bValue);
+
+     return s;
+
+   }
+
+}
+
+
+
+//tabela de variaveis logicas
+
+Dictionary lbooleans = new java.util.Hashtable();
+
+
+
+//tabela de variaveis inteiras
+
+Dictionary lints = new java.util.Hashtable();
+
+
+
+//lista de comandos
+
+Vector lprogram = new Vector();
+
+
+
+//tabela de rotulos
+
+Dictionary llabels = new java.util.Hashtable();
+
+
+
+public String report() {
+
+        String s = "**********************************\n";
+
+        s = s + "Valor atual do conteudo do programa\n\n";
+
+        s = s +"variaveis logicas\n";
+
+        
+
+        s = s+lbooleans.toString()+"\n";
+
+        
+
+        s = s +"\nvariaveis logicas\n";
+
+        s = s + lints.toString() + "\n";
+
+        
+
+        s = s +"\nlabels\n";
+
+        s = s + llabels.toString() + "\n";
+
+        
+
+        s = s +"\ncodigo intermediario\n";
+
+        java.util.Enumeration e4 = lprogram.elements();
+
+        while (e4.hasMoreElements()) {
+
+            String a = (String) e4.nextElement();
+
+            s = s + a +"\n";
+
+        }
+
+        
+
+        s = s +"FIM";
+
+        
+
+        return s;
+
+}
+
+
+
+int statementNo = 0; //contador do programa
+
+java.lang.String cmd ; //comando atual
+
+java.lang.String varName;  //variavel sendo processada
+
+java.lang.String progName; //programa sendo processado
+
+
+
+
+
+
+
+
+
+
+
+CHARACTERS 
+
+    letter = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz". 
+
+    digit = "0123456789". 
+
+
+
+TOKENS 
+
+    Identifier = letter {letter | digit}. 
+
+    Number = ['-'] digit {digit}. 
+
+    true = "true". 
+
+    false = "false". 
+
+
+
+COMMENTS FROM "//" TO '\n' 
+
+IGNORE '\r' + '\n' + '\t' 
+
+ 
+
+PRODUCTIONS 
+
+    TinyCode = "program" Identifier (. progName = t.val; .) 
+
+               "." ProgramBody. 
+
+
+
+
+
+    ProgramBody = ["var" DeclareVar { DeclareVar }] "begin" { Statement } "end." (. lprogram.add("end"); .)
+
+                  . 
+
+
+
+    DeclareVar = Identifier (. varName = t.val; .)
+
+                 ":" DeclareVarBody. 
+
+
+
+    DeclareVarBody = "integer" 
+
+                     "(" Number            (. int lbound = (Integer.valueOf(t.val)).intValue(); .) 
+
+                     ".." Number           (. int ubound = (Integer.valueOf(t.val)).intValue(); .) 
+
+                     ")" ":=" Number       (. int cvalue = (Integer.valueOf(t.val)).intValue(); .) 
+
+                     ";"                   (. lints.put(varName,new IntVar(lbound,ubound,cvalue)); .)
+
+                 | 
+
+                     "boolean" ":=" (true | false) (. boolean bvalue = Boolean.parseBoolean(t.val); .)
+
+                       ";". 
+
+    
+
+    Statement = [Identifier                (. llabels.put(t.val,statementNo); .)
+
+                ":"] StatementBody. 
+
+
+
+
+
+    StatementBody = Assignment | Branching | Goto. 
+
+   
+
+
+
+    Goto = "goto" Identifier               (. lprogram.add("goto " + t.val);
+
+                                            statementNo++; .)
+
+           ";". 
+
+
+
+
+
+    
+
+    Assignment = "let" LValue              (. cmd = "asgn " + t.val + " "; .)
+
+                 ":=" (RValue              (. cmd = cmd + t.val; .)
+
+                 [OP                       (. cmd = cmd + " " + t.val; .)
+
+                 RValue                    (. cmd = cmd + " " + t.val; .) 
+
+                 ]
+
+             |
+
+                 "not"                     (. cmd = cmd + "not"; .)
+
+                 RValue                    (. cmd = cmd + t.val; .)
+
+                 ) ";"                    (. lprogram.add(cmd); statementNo++; .)
+
+                 .
+
+
+
+
+
+    LValue = Identifier. 
+
+
+
+    RValue = Identifier | Number | true | false. 
+
+
+
+    OP = '+' | '-' | "and" | "or". 
+
+
+
+    Branching = "if"                       (. cmd = "if "; .) 
+
+                 CompareExpr               
+
+                 "goto"                    (. cmd = cmd + " goto "; .)
+
+                 Identifier                (. cmd = cmd + t.val; .)
+
+                 ";" 
+
+                 ["else" "goto"            (. cmd = cmd + " elsegoto "; .)
+
+                 Identifier                (. cmd = cmd + t.val; .)
+
+                 ";"]                     (. lprogram.add(cmd); statementNo++; .)
+
+                 .
+
+
+
+
+
+    CompareExpr = RValue                   (. cmd = cmd + t.val; .)
+
+                  CompareOp                (. cmd = cmd + " " + t.val + " "; .)
+
+                  RValue                   (. cmd = cmd + t.val ; .)
+
+                  .        
+
+
+
+
+
+    CompareOp = '=' | "<>" | '<' | "<=" | '>' | ">=". 
+
+
+
+END TinyCode.

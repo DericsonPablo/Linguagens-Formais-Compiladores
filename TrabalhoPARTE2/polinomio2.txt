@@ -1,0 +1,10 @@
+begin
+
+input(a);
+input(b);
+input(c);
+input(x);
+y := a*x*x + b*x + c;
+print(y);
+showSymbolTable();
+end.

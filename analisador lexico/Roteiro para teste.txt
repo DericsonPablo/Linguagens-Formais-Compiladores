@@ -1,0 +1,10 @@
+Os arquivos já estão todos preenchidos:
+O programa.txt contém o algoritmo do exercício de número 3.
+O resp-lex.txt contém a saída do algoritmo do exercício de número 3.
+O PAtaste.txt é o algoritmo do exercício de número 4.
+O resp-lex2.txt é a saída do algoritmo do exercício de número 4.
+
+Para testar um código basta colocar ele no programa.txt
+Para executar o analisador basta digitar no cmd aberto no diretório "python AnalisadorLexico2.py"
+Para ver as saídas basta abrir o resp-lex.txt após a execução do algoritmo.
+

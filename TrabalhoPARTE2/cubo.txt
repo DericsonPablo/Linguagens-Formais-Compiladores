@@ -1,0 +1,11 @@
+begin
+input(a);
+input(b);
+input(c);
+call calculacubo(a,b,c);
+proc calculacubo: a, b,c { //parâmetros
+r:=a*b*c;
+print(r);
+}
+showSymbolTree();
+end

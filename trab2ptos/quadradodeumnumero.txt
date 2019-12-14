@@ -1,0 +1,16 @@
+program Quadrado {
+
+	int num;
+	void CalculaQuadrado(){
+		num = num*num;
+	}
+
+	void Main(){
+		
+		read num;
+		CalculaQuadrado();
+		write num;
+		
+	}
+
+}

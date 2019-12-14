@@ -1,0 +1,4 @@
+Input: aabbaabb  Result: Reject(Accept) 
+Input: aaaa  Result: Reject(Accept) 
+Input: aab  Result: Accept 
+Input: aabbaabb  Result: Reject 

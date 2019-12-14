@@ -1,0 +1,4 @@
+Input: AABBCCDD Output:  Result:  
+Input: ABCD Output:  Result:  
+Input: ABCD Output:  Result:  
+Input: BAACD Output:  Result:  

@@ -1,0 +1,1 @@
+Numero 7) a) Este algoritmo utiliza estados para tentar prever qual será o próximo caractere do padrao.

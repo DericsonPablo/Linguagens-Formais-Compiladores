@@ -1,0 +1,20 @@
+program Test { // compute the sum of 1..i
+	int i; //global variable
+	
+	void SumUp(){
+		int sum;
+		sum = 0;
+		while(i>0){
+			sum = sum + i;
+			i = i-1;
+		}
+		write sum;
+	//the program starts here
+	void Main(){
+		read i;
+		while(i>0){
+			SumUP();
+			read i;
+		}
+	}
+}

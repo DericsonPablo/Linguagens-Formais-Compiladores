@@ -1,0 +1,4 @@
+aabbaabb accept
+aaaa accept
+aab accept
+aabbaabb reject

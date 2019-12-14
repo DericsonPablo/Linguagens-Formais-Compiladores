@@ -1,0 +1,4 @@
+AABBCCDD XXBBCCDD Accept
+ABCD XBCD Accept
+ABCD BCD reject
+BAACD ~ accept

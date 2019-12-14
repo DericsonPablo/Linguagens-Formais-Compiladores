@@ -1,0 +1,25 @@
+COMPILER CLC
+public void showProduction(String s) {
+  	System.out.println("Token lido: "+s);
+}
+
+String s = "";
+
+CHARACTERS 
+    letter = "abcdefghijklmnopqrstuvwxyz". 
+    digit = "0123456789". 
+TOKENS 
+    id = letter {letter}. 
+    num = digit {digit}. 
+COMMENTS FROM "//" TO '\n' 
+IGNORE '\r' + '\n' + '\t' 
+
+PRODUCTIONS 
+    CLC = "begin" L "end.".
+    L = C ";" L (. showProduction(t.val);.)| "showSymbolTable" "(" ")" ";" (. showProduction(t.val);.)| "showSymbolTree" "(" ")" ";" (. showProduction(t.val);.).
+    C = id ":=" E (. showProduction(t.val);.)| "input" "(" id ")" (. showProduction(t.val);.)| "print" "(" id ")" (. showProduction(t.val);.).
+    E = T { ("+"|"-") T } (. showProduction(t.val);.).
+    T = F { ("*"|"/") F }(. showProduction(t.val);.).
+    F = (id |num | "(" E ")" ) (. showProduction(t.val);.).
+
+END CLC.

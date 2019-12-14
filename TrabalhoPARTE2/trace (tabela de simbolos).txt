@@ -1,0 +1,32 @@
+Symbol Table:
+------------
+
+ nr name           typ  hasAt graph  del   line tokenKind
+  0 EOF            t    false                 0 fixedToken
+  1 id             t    false                12 classLitToken
+  2 num            t    false                13 classToken
+  3 "begin"        t    false                18 litToken
+  4 "end."         t    false                18 fixedToken
+  5 ";"            t    false                19 fixedToken
+  6 "showSymbolT   t    false                19 fixedToken
+  7 "("            t    false                19 fixedToken
+  8 ")"            t    false                19 fixedToken
+  9 "showSymbolT   t    false                19 fixedToken
+ 10 ":="           t    false                20 fixedToken
+ 11 "input"        t    false                20 litToken
+ 12 "print"        t    false                20 litToken
+ 13 "+"            t    false                21 fixedToken
+ 14 "-"            t    false                21 fixedToken
+ 15 "*"            t    false                22 fixedToken
+ 16 "/"            t    false                22 fixedToken
+ 17 ???            t    false                 0 fixedToken
+  0 CLC            nt   false     1 false    18 fixedToken
+  1 L              nt   false    13 false    19 fixedToken
+  2 C              nt   false    30 false    20 fixedToken
+  3 E              nt   false    38 false    21 fixedToken
+  4 T              nt   false    46 false    22 fixedToken
+  5 F              nt   false    56 false    23 fixedToken
+
+Literal Tokens:
+--------------
+

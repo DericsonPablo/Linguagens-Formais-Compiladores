@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 6.1.--><structure>
+	<type>turing</type>
+	<automaton>
+		<!--The list of states.-->
+		<block id="0" name="R_blank">
+			<tag>R_blank.jff</tag>
+			<x>156.0</x>
+			<y>99.0</y>
+		</block>
+		<block id="1" name="R_blank">
+			<tag>R_blank.jff</tag>
+			<x>522.0</x>
+			<y>227.0</y>
+		</block>
+		<block id="2" name="L_y">
+			<tag>L_y.jff</tag>
+			<x>239.0</x>
+			<y>230.0</y>
+		</block>
+		<block id="3" name="R">
+			<tag>R.jff3</tag>
+			<x>498.0</x>
+			<y>90.0</y>
+		</block>
+		<block id="4" name="L_blank">
+			<tag>L_blank.jff</tag>
+			<x>372.0</x>
+			<y>95.0</y>
+		</block>
+		<block id="5" name="start">
+			<tag>start.jff</tag>
+			<x>77.0</x>
+			<y>45.0</y>
+			<initial/>
+		</block>
+		<block id="6" name="X">
+			<tag>X.jff6</tag>
+			<x>619.0</x>
+			<y>92.0</y>
+		</block>
+		<block id="7" name="X">
+			<tag>X.jff</tag>
+			<x>264.0</x>
+			<y>97.0</y>
+		</block>
+		<block id="8" name="R">
+			<tag>R.jff</tag>
+			<x>742.0</x>
+			<y>93.0</y>
+			<final/>
+		</block>
+		<block id="9" name="I">
+			<tag>I.jff</tag>
+			<x>374.0</x>
+			<y>229.0</y>
+		</block>
+		<block id="10" name="y">
+			<tag>y.jff</tag>
+			<x>666.0</x>
+			<y>223.0</y>
+		</block>
+		<!--The list of transitions.-->
+		<transition block="true">
+			<from>5</from>
+			<to>0</to>
+			<read>~</read>
+		</transition>
+		<transition block="true">
+			<from>3</from>
+			<to>3</to>
+			<read>b</read>
+		</transition>
+		<transition block="true">
+			<from>3</from>
+			<to>10</to>
+			<read>a</read>
+		</transition>
+		<transition block="true">
+			<from>0</from>
+			<to>7</to>
+			<read>~</read>
+		</transition>
+		<transition block="true">
+			<from>1</from>
+			<to>9</to>
+			<read>~</read>
+		</transition>
+		<transition block="true">
+			<from>9</from>
+			<to>2</to>
+			<read>~</read>
+		</transition>
+		<transition block="true">
+			<from>6</from>
+			<to>8</to>
+			<read>~</read>
+		</transition>
+		<transition block="true">
+			<from>7</from>
+			<to>4</to>
+			<read>~</read>
+		</transition>
+		<transition block="true">
+			<from>3</from>
+			<to>6</to>
+			<read>~</read>
+		</transition>
+		<transition block="true">
+			<from>10</from>
+			<to>1</to>
+			<read>~</read>
+		</transition>
+		<transition block="true">
+			<from>4</from>
+			<to>3</to>
+			<read>~</read>
+		</transition>
+		<transition block="true">
+			<from>2</from>
+			<to>3</to>
+			<read>~</read>
+		</transition>
+		<!--The list of automata-->
+		<start.jff>
+			<!--The list of states.-->
+			<state id="0" name="q0">
+				<x>166.0</x>
+				<y>127.0</y>
+				<initial/>
+			</state>
+			<state id="1" name="q1">
+				<x>326.0</x>
+				<y>125.0</y>
+				<final/>
+			</state>
+			<!--The list of transitions.-->
+			<transition>
+				<from>0</from>
+				<to>1</to>
+				<read>~</read>
+				<write>~</write>
+				<move>S</move>
+			</transition>
+		</start.jff>
+		<R_a.jff>
+			<!--The list of states.-->
+			<state id="0" name="q0">
+				<x>76.0</x>
+				<y>142.0</y>
+				<initial/>
+			</state>
+			<state id="1" name="q1">
+				<x>257.0</x>
+				<y>139.0</y>
+			</state>
+			<state id="2" name="q2">
+				<x>401.0</x>
+				<y>141.0</y>
+				<final/>
+			</state>
+			<!--The list of transitions.-->
+			<transition>
+				<from>1</from>
+				<to>2</to>
+				<read>b</read>
+				<write>b</write>
+				<move>S</move>
+			</transition>
+			<transition>
+				<from>1</from>
+				<to>1</to>
+				<read>!b</read>
+				<write>~</write>
+				<move>R</move>
+			</transition>
+			<transition>
+				<from>0</from>
+				<to>1</to>
+				<read>~</read>
+				<write>~</write>
+				<move>R</move>
+			</transition>
+		</R_a.jff>
+		<X.jff6>
+			<!--The list of states.-->
+			<state id="0" name="q0">
+				<x>166.0</x>
+				<y>127.0</y>
+				<initial/>
+			</state>
+			<state id="1" name="q1">
+				<x>326.0</x>
+				<y>125.0</y>
+				<final/>
+			</state>
+			<!--The list of transitions.-->
+			<transition>
+				<from>0</from>
+				<to>1</to>
+				<read>~</read>
+				<write>X</write>
+				<move>S</move>
+			</transition>
+		</X.jff6>
+		<R.jff11>
+			<!--The list of states.-->
+			<state id="0" name="q0">
+				<x>107.0</x>
+				<y>134.0</y>
+				<initial/>
+			</state>
+			<state id="1" name="q1">
+				<x>261.0</x>
+				<y>134.0</y>
+				<final/>
+			</state>
+			<!--The list of transitions.-->
+			<transition>
+				<from>0</from>
+				<to>1</to>
+				<read>~</read>
+				<write>~</write>
+				<move>R</move>
+			</transition>
+		</R.jff11>
+		<R_blank.jff>
+			<!--The list of states.-->
+			<state id="0" name="q0">
+				<x>66.0</x>
+				<y>135.0</y>
+				<initial/>
+			</state>
+			<state id="1" name="q1">
+				<x>211.0</x>
+				<y>135.0</y>
+			</state>
+			<state id="2" name="q2">
+				<x>355.0</x>
+				<y>135.0</y>
+				<final/>
+			</state>
+			<!--The list of transitions.-->
+			<transition>
+				<from>1</from>
+				<to>1</to>
+				<read>!□</read>
+				<write>~</write>
+				<move>R</move>
+			</transition>
+			<transition>
+				<from>1</from>
+				<to>2</to>
+				<read/>
+				<write/>
+				<move>S</move>
+			</transition>
+			<transition>
+				<from>0</from>
+				<to>1</to>
+				<read>~</read>
+				<write>~</write>
+				<move>R</move>
+			</transition>
+		</R_blank.jff>
+		<R.jff>
+			<!--The list of states.-->
+			<state id="0" name="q0">
+				<x>107.0</x>
+				<y>134.0</y>
+				<initial/>
+			</state>
+			<state id="1" name="q1">
+				<x>261.0</x>
+				<y>134.0</y>
+				<final/>
+			</state>
+			<!--The list of transitions.-->
+			<transition>
+				<from>0</from>
+				<to>1</to>
+				<read>~</read>
+				<write>~</write>
+				<move>R</move>
+			</transition>
+		</R.jff>
+		<L_blank.jff>
+			<!--The list of states.-->
+			<state id="0" name="q0">
+				<x>126.0</x>
+				<y>136.0</y>
+				<initial/>
+			</state>
+			<state id="1" name="q1">
+				<x>271.0</x>
+				<y>136.0</y>
+			</state>
+			<state id="2" name="q2">
+				<x>407.0</x>
+				<y>136.0</y>
+				<final/>
+			</state>
+			<!--The list of transitions.-->
+			<transition>
+				<from>0</from>
+				<to>1</to>
+				<read>~</read>
+				<write>~</write>
+				<move>L</move>
+			</transition>
+			<transition>
+				<from>1</from>
+				<to>2</to>
+				<read/>
+				<write/>
+				<move>S</move>
+			</transition>
+			<transition>
+				<from>1</from>
+				<to>1</to>
+				<read>!□</read>
+				<write>~</write>
+				<move>L</move>
+			</transition>
+		</L_blank.jff>
+		<y.jff>
+			<!--The list of states.-->
+			<state id="0" name="q0">
+				<x>166.0</x>
+				<y>127.0</y>
+				<initial/>
+			</state>
+			<state id="1" name="q1">
+				<x>326.0</x>
+				<y>125.0</y>
+				<final/>
+			</state>
+			<!--The list of transitions.-->
+			<transition>
+				<from>0</from>
+				<to>1</to>
+				<read>~</read>
+				<write>y</write>
+				<move>S</move>
+			</transition>
+		</y.jff>
+		<L_blank.jff11>
+			<!--The list of states.-->
+			<state id="0" name="q0">
+				<x>126.0</x>
+				<y>136.0</y>
+				<initial/>
+			</state>
+			<state id="1" name="q1">
+				<x>271.0</x>
+				<y>136.0</y>
+			</state>
+			<state id="2" name="q2">
+				<x>407.0</x>
+				<y>136.0</y>
+				<final/>
+			</state>
+			<!--The list of transitions.-->
+			<transition>
+				<from>1</from>
+				<to>2</to>
+				<read/>
+				<write/>
+				<move>R</move>
+			</transition>
+			<transition>
+				<from>0</from>
+				<to>1</to>
+				<read>~</read>
+				<write>~</write>
+				<move>L</move>
+			</transition>
+			<transition>
+				<from>1</from>
+				<to>1</to>
+				<read>!□</read>
+				<write>~</write>
+				<move>L</move>
+			</transition>
+		</L_blank.jff11>
+		<R_a.jff11>
+			<!--The list of states.-->
+			<state id="0" name="q0">
+				<x>76.0</x>
+				<y>142.0</y>
+				<initial/>
+			</state>
+			<state id="1" name="q1">
+				<x>257.0</x>
+				<y>139.0</y>
+			</state>
+			<state id="2" name="q2">
+				<x>401.0</x>
+				<y>141.0</y>
+				<final/>
+			</state>
+			<!--The list of transitions.-->
+			<transition>
+				<from>0</from>
+				<to>1</to>
+				<read>~</read>
+				<write>~</write>
+				<move>R</move>
+			</transition>
+			<transition>
+				<from>1</from>
+				<to>1</to>
+				<read>!b</read>
+				<write>~</write>
+				<move>R</move>
+			</transition>
+			<transition>
+				<from>1</from>
+				<to>2</to>
+				<read>b</read>
+				<write>b</write>
+				<move>R</move>
+			</transition>
+		</R_a.jff11>
+		<rightUntilA.jff>
+			<!--The list of states.-->
+			<state id="0" name="q0">
+				<x>76.0</x>
+				<y>142.0</y>
+				<initial/>
+			</state>
+			<state id="1" name="q1">
+				<x>257.0</x>
+				<y>139.0</y>
+			</state>
+			<state id="2" name="q2">
+				<x>401.0</x>
+				<y>141.0</y>
+				<final/>
+			</state>
+			<block id="3" name="start">
+				<tag>start.jff</tag>
+				<x>452.0</x>
+				<y>49.0</y>
+			</block>
+			<!--The list of transitions.-->
+			<transition>
+				<from>0</from>
+				<to>1</to>
+				<read>~</read>
+				<write>~</write>
+				<move>R</move>
+			</transition>
+			<transition>
+				<from>1</from>
+				<to>1</to>
+				<read>!b</read>
+				<write>~</write>
+				<move>R</move>
+			</transition>
+			<transition>
+				<from>1</from>
+				<to>2</to>
+				<read>b</read>
+				<write>b</write>
+				<move>S</move>
+			</transition>
+			<!--The list of automata-->
+			<start.jff>
+				<!--The list of states.-->
+				<state id="0" name="q0">
+					<x>166.0</x>
+					<y>127.0</y>
+					<initial/>
+				</state>
+				<state id="1" name="q1">
+					<x>326.0</x>
+					<y>125.0</y>
+					<final/>
+				</state>
+				<!--The list of transitions.-->
+				<transition>
+					<from>0</from>
+					<to>1</to>
+					<read>~</read>
+					<write>~</write>
+					<move>S</move>
+				</transition>
+			</start.jff>
+		</rightUntilA.jff>
+		<x.jff>
+			<!--The list of states.-->
+			<state id="0" name="q0">
+				<x>102.0</x>
+				<y>135.0</y>
+				<initial/>
+			</state>
+			<state id="1" name="q1">
+				<x>233.0</x>
+				<y>135.0</y>
+				<final/>
+			</state>
+			<!--The list of transitions.-->
+			<transition>
+				<from>0</from>
+				<to>1</to>
+				<read>~</read>
+				<write>x</write>
+				<move>S</move>
+			</transition>
+		</x.jff>
+		<R.jff3>
+			<!--The list of states.-->
+			<state id="0" name="q0">
+				<x>107.0</x>
+				<y>134.0</y>
+				<initial/>
+			</state>
+			<state id="1" name="q1">
+				<x>261.0</x>
+				<y>134.0</y>
+				<final/>
+			</state>
+			<!--The list of transitions.-->
+			<transition>
+				<from>0</from>
+				<to>1</to>
+				<read>~</read>
+				<write>~</write>
+				<move>R</move>
+			</transition>
+		</R.jff3>
+		<X.jff>
+			<!--The list of states.-->
+			<state id="0" name="q0">
+				<x>166.0</x>
+				<y>127.0</y>
+				<initial/>
+			</state>
+			<state id="1" name="q1">
+				<x>326.0</x>
+				<y>125.0</y>
+				<final/>
+			</state>
+			<!--The list of transitions.-->
+			<transition>
+				<from>0</from>
+				<to>1</to>
+				<read/>
+				<write>X</write>
+				<move>S</move>
+			</transition>
+		</X.jff>
+		<L_y.jff>
+			<!--The list of states.-->
+			<state id="0" name="q0">
+				<x>126.0</x>
+				<y>136.0</y>
+				<initial/>
+			</state>
+			<state id="1" name="q1">
+				<x>271.0</x>
+				<y>136.0</y>
+			</state>
+			<state id="2" name="q2">
+				<x>407.0</x>
+				<y>136.0</y>
+				<final/>
+			</state>
+			<!--The list of transitions.-->
+			<transition>
+				<from>0</from>
+				<to>1</to>
+				<read>~</read>
+				<write>~</write>
+				<move>L</move>
+			</transition>
+			<transition>
+				<from>1</from>
+				<to>2</to>
+				<read>y</read>
+				<write>y</write>
+				<move>S</move>
+			</transition>
+			<transition>
+				<from>1</from>
+				<to>1</to>
+				<read>!y</read>
+				<write>~</write>
+				<move>L</move>
+			</transition>
+		</L_y.jff>
+		<I.jff>
+			<!--The list of states.-->
+			<state id="0" name="q0">
+				<x>166.0</x>
+				<y>127.0</y>
+				<initial/>
+			</state>
+			<state id="1" name="q1">
+				<x>326.0</x>
+				<y>125.0</y>
+				<final/>
+			</state>
+			<!--The list of transitions.-->
+			<transition>
+				<from>0</from>
+				<to>1</to>
+				<read>~</read>
+				<write>I</write>
+				<move>S</move>
+			</transition>
+		</I.jff>
+	</automaton>
+</structure>

@@ -1,0 +1,19 @@
+program CountSum.
+
+
+
+var s: integer(0..100) := 1;
+
+    b: integer(1..8) :=1;
+
+
+
+begin
+
+  loop: let s := s + b;
+
+        let b := b + 1;
+
+        if b<6 goto loop;
+
+end.

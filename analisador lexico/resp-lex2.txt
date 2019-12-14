@@ -1,0 +1,81 @@
+[Identificador program] - DT: 1 - linha de localização->1
+[Identificador Pa] - DT: 1 - linha de localização->1
+[Delimitador] - DT: 4 - Delimitador encontrado: { - linha de localização->1
+[Palavra Reservada void]- linha de localização->3
+[Identificador PrintPa] - DT: 1 - linha de localização->3
+[Delimitador] - DT: 2 - Delimitador encontrado: ( - linha de localização->3
+[Palavra Reservada int]- linha de localização->3
+[Identificador primeiroTermo] - DT: 1 - linha de localização->3
+[Delimitador] - DT: 1 - Delimitador encontrado: , - linha de localização->3
+[Palavra Reservada int]- linha de localização->3
+[Identificador n] - DT: 1 - linha de localização->3
+[Delimitador] - DT: 1 - Delimitador encontrado: , - linha de localização->3
+[Palavra Reservada int]- linha de localização->3
+[Identificador r] - DT: 1 - linha de localização->3
+[Delimitador] - DT: 3 - Delimitador encontrado: ) - linha de localização->3
+[Delimitador] - DT: 4 - Delimitador encontrado: { - linha de localização->3
+[Palavra Reservada int]- linha de localização->4
+[Identificador i] - DT: 1 - linha de localização->4
+[Delimitador] - DT: 0 - Delimitador encontrado: ; - linha de localização->4
+[Palavra Reservada int]- linha de localização->5
+[Identificador termo] - DT: 1 - linha de localização->5
+[Delimitador] - DT: 0 - Delimitador encontrado: ; - linha de localização->5
+[Identificador i] - DT: 1 - linha de localização->6
+[Operador =] - DT: 15 - linha de localização->6
+[Número inteiro 0] DT = 300  - linha de localização:->6
+[Delimitador] - DT: 0 - Delimitador encontrado: ; - linha de localização->6
+[Palavra Reservada while]- linha de localização->7
+[Delimitador] - DT: 2 - Delimitador encontrado: ( - linha de localização->7
+[Identificador i] - DT: 1 - linha de localização->7
+[Operador <] - DT: 14 - linha de localização->7
+[Identificador n] - DT: 1 - linha de localização->7
+[Delimitador] - DT: 3 - Delimitador encontrado: ) - linha de localização->7
+[Delimitador] - DT: 4 - Delimitador encontrado: { - linha de localização->7
+[Identificador termo] - DT: 1 - linha de localização->8
+[Operador =] - DT: 15 - linha de localização->8
+[Identificador primeiroTermo] - DT: 1 - linha de localização->8
+[Operador +] - DT: 8 - linha de localização->8
+[Delimitador] - DT: 2 - Delimitador encontrado: ( - linha de localização->8
+[Identificador i] - DT: 1 - linha de localização->8
+[Operador -] - DT: 9 - linha de localização->8
+[Número inteiro 1] DT = 300  - linha de localização:->8
+[Delimitador] - DT: 3 - Delimitador encontrado: ) - linha de localização->8
+[Operador *] - DT: 11 - linha de localização->8
+[Identificador r] - DT: 1 - linha de localização->8
+[Delimitador] - DT: 0 - Delimitador encontrado: ; - linha de localização->8
+[Palavra Reservada write] DT = 7 - linha de localização->9
+[Identificador termo] - DT: 1 - linha de localização->9
+[Delimitador] - DT: 0 - Delimitador encontrado: ; - linha de localização->9
+[Identificador i] - DT: 1 - linha de localização->10
+[Operador =] - DT: 15 - linha de localização->10
+[Identificador i] - DT: 1 - linha de localização->10
+[Operador +] - DT: 8 - linha de localização->10
+[Número inteiro 1] DT = 300  - linha de localização:->10
+[Delimitador] - DT: 0 - Delimitador encontrado: ; - linha de localização->10
+[Delimitador] - DT: 5 - Delimitador encontrado: } - linha de localização->11
+[Delimitador] - DT: 5 - Delimitador encontrado: } - linha de localização->12
+[Palavra Reservada void]- linha de localização->14
+[Palavra Reservada Main]- linha de localização->14
+[Delimitador] - DT: 2 - Delimitador encontrado: ( - linha de localização->14
+[Delimitador] - DT: 3 - Delimitador encontrado: ) - linha de localização->14
+[Delimitador] - DT: 4 - Delimitador encontrado: { - linha de localização->14
+[Palavra Reservada read] DT = 6 - linha de localização->15
+[Identificador primeiroTermo] - DT: 1 - linha de localização->15
+[Delimitador] - DT: 0 - Delimitador encontrado: ; - linha de localização->15
+[Palavra Reservada read] DT = 6 - linha de localização->16
+[Identificador n] - DT: 1 - linha de localização->16
+[Delimitador] - DT: 0 - Delimitador encontrado: ; - linha de localização->16
+[Palavra Reservada read] DT = 6 - linha de localização->17
+[Identificador r] - DT: 1 - linha de localização->17
+[Delimitador] - DT: 0 - Delimitador encontrado: ; - linha de localização->17
+[Identificador PrintPA] - DT: 1 - linha de localização->18
+[Delimitador] - DT: 2 - Delimitador encontrado: ( - linha de localização->18
+[Identificador primeiroTermo] - DT: 1 - linha de localização->18
+[Delimitador] - DT: 1 - Delimitador encontrado: , - linha de localização->18
+[Identificador n] - DT: 1 - linha de localização->18
+[Delimitador] - DT: 1 - Delimitador encontrado: , - linha de localização->18
+[Identificador r] - DT: 1 - linha de localização->18
+[Delimitador] - DT: 3 - Delimitador encontrado: ) - linha de localização->18
+[Delimitador] - DT: 0 - Delimitador encontrado: ; - linha de localização->18
+[Delimitador] - DT: 5 - Delimitador encontrado: } - linha de localização->19
+$

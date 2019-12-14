@@ -1,0 +1,14 @@
+program Test {
+    int a, b, c, x, sum;
+
+  void Bhask() {
+    read a;
+    read b;
+    read c;
+    sum = a*x*x + b*x + c;
+  }
+
+    void Main(){
+      Bhask();
+    }
+}
